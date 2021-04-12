@@ -10,7 +10,11 @@ Secondly, prediction is used to identify areas for improving the training of ath
 Using the teams’ data analysis, a model that can predict the number of goals scored in a match was built. Based on the such models, one can test their assumptions / hypotheses and use it as an example / basis for other models.
 #### Technologies Used
 *Python*
+
 *Pandas*
+
 *Numpy*
+
 *Scikit-Learn*
+
 *XGBoost*
