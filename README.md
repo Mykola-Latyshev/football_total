@@ -34,3 +34,18 @@ I did another data split into Train and Validation data in preparation for using
 For the majority of models I created, I applied hyperparameter tuning, where I started with a broad range of hyperparameters, and tuned for optimal train accuracy and validation accuracy.
 
 ![Model](https://user-images.githubusercontent.com/82052288/114435419-cd019a00-9bcc-11eb-9f02-a2b5f713c8e3.jpg)
+
+The model with highest validation accuracy was obtained using XGBoost (from 0.63 to 0.67). However, when training the considered models, I used the datasets that include data on team statistics during the match which is not correct, since this match data reflect the result obtained. 
+
+The prediction accuracy without team statistics data ranged from 0.56 to 0.59 (where 0.5 = randomly guessing correctly), which is slightly lower than the bookmaker's accuracy (0.57 – 0.59).
+### Profit
+I chose the XGBoost model as my best model for profit calculations, because it has the highest validation accuracy. 
+![Profit_final](https://user-images.githubusercontent.com/82052288/114435579-fa4e4800-9bcc-11eb-846c-5ba2acfe1360.jpg)
+
+I calculated the percentage profit by dividing the income by the cost of the investment.  It is shown that if I use statistical data it is possible to make a profit, but this is basically impossible because the data were received during the match. Without taking the data into account, you only lose 1-6% over a fairly long period (more than six months).
+### Future Development
+Further development is possible in two directions. 
+
+The first direction is the search and improvement of the models (there is a difference between the accuracy of training and test data). Possible options: using team statistics from previous matches; ignoring matches at the beginning of the Championship (due to insufficient information content); setting the threshold value; using other algorithms etc.
+
+The second direction is important for the theory and methodology of training athletes. Analysis of the influence of team performance (statistical data) on the achievement of the result.  
