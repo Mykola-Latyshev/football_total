@@ -18,3 +18,6 @@ Using the teams’ data analysis, a model that can predict the number of goals s
 *Scikit-Learn*
 
 *XGBoost*
+### Data
+The data on the last three seasons plus the current one (2020/2021) for the three most popular European Championships - English, Spanish and Italian, was taken from the website (http://football-data.co.uk/).
+### Preprocessing
