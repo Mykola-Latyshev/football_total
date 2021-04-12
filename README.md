@@ -32,3 +32,5 @@ Three seasons (1140 samples) will be used to build the model, and the model will
 I did another data split into Train and Validation data in preparation for using GridSearch Cross Validation. I also chose 5-fold cross validation.
 
 For the majority of models I created, I applied hyperparameter tuning, where I started with a broad range of hyperparameters, and tuned for optimal train accuracy and validation accuracy.
+
+![Model](https://user-images.githubusercontent.com/82052288/114435419-cd019a00-9bcc-11eb-9f02-a2b5f713c8e3.jpg)
